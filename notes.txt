@@ -1,0 +1,20 @@
+"# ZapPatOW.github.io" 
+
+git remote add origin https://github.com/ZapPatOW/ZapPatOW.github.io
+git branch -M main
+git push -u origin main
+
+echo "# ZapPatOW.github.io" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/ZapPatOW/ZapPatOW.github.io
+git push -u origin main
+
+git remote add origin https://github.com/ZapPatOW/ZapPatOW.github.io
+git pull origin main
+git branch -m recent main
+git add .
+git commit -m "recent branch changed to main"
+git push --set-upstream origin main

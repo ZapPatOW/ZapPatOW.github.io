@@ -4,30 +4,38 @@
 
 body{
   margin: 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px rgb(0, 0, 0)
 }
 
 .navbar {
-  margin : 0px;
-  background-color: rgba(0, 0, 0, 0.8);
   overflow: hidden;
+  height: 75px;
+  
 }
 .navbar a{
   color: white;
   text-decoration: none;
   padding: 20px;
-  font-size: 15pt;
-}
+  font-size: 20pt;
+  position :relative;
+  top: 20px;
+ }
 .navbar a:hover{
   background-color: black;
 }
-
-p{
-  margin-left: 5px;
-  margin-right: 5px;
+h1{
+  color: white;
+}
+p1{
+  margin-left: 20px;
+  margin-right: 20px;
+  color: white;
 }
 ul{
   margin-left: 5px;
   margin-right: 5px;
+  color: white;
 }
 
 .switch {

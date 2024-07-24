@@ -1,7 +1,35 @@
-h1 {
-    color : black
+.title {
+    text-align : center;
 }
-/* The switch - the box around the slider */
+
+body{
+  margin: 0px;
+}
+
+.navbar {
+  margin : 0px;
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+}
+.navbar a{
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  font-size: 15pt;
+}
+.navbar a:hover{
+  background-color: black;
+}
+
+p{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+ul{
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .switch {
     position: absolute;
     top: 0px;
@@ -11,14 +39,12 @@ h1 {
     height: 34px;
   }
   
-  /* Hide default HTML checkbox */
   .switch input {
     opacity: 0;
     width: 0;
     height: 0;
   }
-  
-  /* The slider */
+
   .slider {
     position: absolute;
     cursor: pointer;
@@ -57,8 +83,6 @@ h1 {
     transform: translateX(26px);
   }
   
-  
-  /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
   }

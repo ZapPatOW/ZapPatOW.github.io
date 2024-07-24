@@ -5,37 +5,48 @@
 body{
   margin: 0px;
   background-color: rgba(0, 0, 0, 0.8);
-  border: 1px rgb(0, 0, 0)
 }
 
-.navbar {
+.navbar ul{
+  list-style-type: none;
   overflow: hidden;
+  border-bottom: 2px solid black;
+  padding: 0px;
+  margin: 0px;
   height: 75px;
-  
 }
 .navbar a{
   color: white;
   text-decoration: none;
-  padding: 20px;
-  font-size: 20pt;
-  position :relative;
-  top: 20px;
+  padding: 25px;
+  display: block;  
+  text-align: center;
+  font-size: 25px;
+  border-right: 2px solid black;
+  overflow:hidden;
  }
 .navbar a:hover{
   background-color: black;
 }
+.navbar li{
+  float: left;
+}
+
 h1{
   color: white;
+  font-size: 40px;
 }
 p1{
   margin-left: 20px;
   margin-right: 20px;
   color: white;
+  font-size: 20px;
 }
 ul{
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
   color: white;
+  font-size: 20px;
 }
 
 .switch {

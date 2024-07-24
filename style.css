@@ -17,6 +17,7 @@ footer{
   list-style-type: none;
   position: relative;
   height: 100px;
+  font-family: Consolas, 'Courier New', monospace;
 }
 
 /*fonts*/
@@ -24,22 +25,26 @@ h1{
   color: white;
   font-size: 40px;
   text-align : center;
+  font-family: Consolas, 'Courier New', monospace;
 }
 p1{
   color: white;
   font-size: 20px;
+  font-family: Consolas, 'Courier New', monospace;
 }
 ul{
   margin-left: 20px;
   margin-right: 20px;
   color: white;
   font-size: 20px;
-}
+  font-family: Consolas, 'Courier New', monospace;
+  }
 ul1{
   color: white;
   font-size: 20px;
   list-style-type: none;
   text-indent: 2%;
+  font-family: Consolas, 'Courier New', monospace;
 }
 
 

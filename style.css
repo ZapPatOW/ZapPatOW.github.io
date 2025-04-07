@@ -27,10 +27,11 @@ h1{
   text-align : center;
   font-family: Consolas, 'Courier New', monospace;
 }
-p1{
+p{
   color: white;
   font-size: 20px;
   font-family: Consolas, 'Courier New', monospace;
+  margin: 20px
 }
 ul{
   margin-left: 20px;
@@ -39,12 +40,15 @@ ul{
   font-size: 20px;
   font-family: Consolas, 'Courier New', monospace;
   }
-ul1{
+
+
+
+/*footer*/
+.footer{
   color: white;
   font-size: 20px;
-  list-style-type: none;
-  text-indent: 2%;
   font-family: Consolas, 'Courier New', monospace;
+  text-align: center;
 }
 
 
@@ -75,64 +79,3 @@ ul1{
   float: left;
 }
 
-/*switch*/
-.switch {
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }
-  
-  .switch input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-  }
-  
-  input:checked + .slider {
-    background-color: #000000;
-  }
-  
-  input:focus + .slider {
-    box-shadow: 0 0 1px #000000;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-  
-  .slider.round {
-    border-radius: 34px;
-  }
-  
-  .slider.round:before {
-    border-radius: 50%;
-  }

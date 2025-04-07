@@ -1,3 +1,4 @@
 Create a Certifications Page - Eventually use the free trial to get pictures of the Certifications
 More style website still looks 1990 coded
 Condense the code/make it more readable
+add screenshots/powerpoint for the completed items

@@ -1,10 +1,5 @@
-"ZapPatOW.github.io" 
+Utilize VSCode built in repository. Need to make a refresher on how to get it to function again.
 
-git init
-git add .
-git commit -m ""
-git branch -M main
-git remote add origin https://github.com/ZapPatOW/ZapPatOW.github.io.git
-git push -u origin main
+Stage all changes -> commit changes
 
-this is a test change
+Learn more about the other git options to be more efficient

@@ -1,0 +1,4 @@
+Make the footer on the website an automatic thing
+Create a Certificats Page - Eventually use the free trial to get pictures of the Certificats
+More brainstorming, website still looks 1990 coded.
+update notes.txt so that I can remind myself how to do things I need.

@@ -25,6 +25,33 @@ ul{
   font-family: Consolas, 'Courier New', monospace;
   }
 
+#recurse{
+  color: white;
+  font-size: 20px;
+  font-style: strong;
+}
+#recurse.link{
+  color: white;
+  font-size: 20px;
+  font-style: strong;
+}
+#recurse:visited{
+  color: lightgrey;
+  font-size: 20px;
+  font-style: strong;
+}
+#recurse:hover{
+  color: grey;
+  font-size: 20px;
+  font-style: strong;
+}
+#recurse:active{
+  color: grey;
+  font-size: 20px;
+  font-style: strong;
+}
+
+
 /*footer*/
 .footer{
   color: white;
@@ -58,3 +85,4 @@ ul{
 .navbar li{
   float: left;
 }
+

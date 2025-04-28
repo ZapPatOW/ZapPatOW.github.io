@@ -4,11 +4,11 @@ class myHeader extends HTMLElement{
         <header>
             <nav class = "header">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./Ideas.html">Ideas</a></li>
-                    <li><a href="./InProgress.html">In Progress</a></li>
-                    <li><a href="./Completed.html">Completed</a></li>
-                    <li><a href="./Workspace.html">Workspace</a></li>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./Ideas">Ideas</a></li>
+                    <li><a href="./InProgress">In Progress</a></li>
+                    <li><a href="./Completed">Completed</a></li>
+                    <li><a href="./Workspace">Workspace</a></li>
                 </ul>
             </nav>
         </header>`;

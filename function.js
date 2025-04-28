@@ -4,7 +4,7 @@ class myHeader extends HTMLElement{
         <header>
             <nav class = "header">
                 <ul>
-                    <li><a href="./Home.html">Home</a></li>
+                    <li><a href="./index.html">Home</a></li>
                     <li><a href="./Ideas.html">Ideas</a></li>
                     <li><a href="./InProgress.html">In Progress</a></li>
                     <li><a href="./Completed.html">Completed</a></li>

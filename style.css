@@ -1,42 +1,50 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  height: 100%;
+  box-sizing: border-box;
+}
+
 /*full content*/
 body{
   margin: 0px;
+  padding: 0px;
   background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: Consolas, 'Courier New', monospace;
+  box-sizing: border-box;
+  height: 100%;
 }
-
+.wrapper{
+  box-sizing: border-box;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  flex-grow: 1;
+}
 /*fonts*/
 h1{
-  color: white;
   font-size: 40px;
-  text-align : center;
-  font-family: Consolas, 'Courier New', monospace;
+  text-align: center;
 }
 p{
-  color: white;
   font-size: 20px;
-  font-family: Consolas, 'Courier New', monospace;
   margin: 20px
 }
-ul{
-  margin-left: 20px;
-  margin-right: 20px;
-  color: white;
-  font-size: 20px;
-  font-family: Consolas, 'Courier New', monospace;
-  }
 
-#recurse,#recurse:link,#recurse:visited{
+#cLink,#cLink:link,#cLink:visited{
   color: white;
   font-size: 20px;
   font-style: strong;
 }
-#recurse:hover,#recurse:active{
+#cLink:hover,#cLink:active{
   color: grey;
   font-size: 20px;
   font-style: strong;
 }
-
-
 
 /*footer*/
 .footer{
@@ -44,10 +52,24 @@ ul{
   font-size: 20px;
   font-family: Consolas, 'Courier New', monospace;
   text-align: center;
+  background-color: black;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.footer p{
+  margin: 0px;
 }
 
 /*navbar*/
-.navbar ul{
+.header{
+  flex-grow: 0px;
+  flex-shrink: 0px;
+  padding-bottom: 20px;
+}
+.header ul{
   list-style-type: none;
   overflow: hidden;
   border-bottom: 2px solid black;
@@ -55,7 +77,7 @@ ul{
   margin: 0px;
   height: 75px;
 }
-.navbar a{
+.header a{
   color: white;
   text-decoration: none;
   padding: 25px;
@@ -65,10 +87,10 @@ ul{
   border-right: 2px solid black;
   overflow:hidden;
  }
-.navbar a:hover{
+.header a:hover{
   background-color: black;
 }
-.navbar li{
+.header li{
   float: left;
 }
 

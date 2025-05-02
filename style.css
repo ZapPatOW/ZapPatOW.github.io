@@ -6,7 +6,7 @@ html{
   box-sizing: border-box;
 }
 
-/*full content*/
+/*content*/
 body{
   margin: 0px;
   padding: 0px;
@@ -25,7 +25,6 @@ body{
 main{
   flex-grow: 1;
 }
-/*fonts*/
 h1{
   font-size: 40px;
   text-align: center;
@@ -46,6 +45,9 @@ p{
   font-style: strong;
 }
 
+input{
+  margin: 50px;
+}
 /*footer*/
 .footer{
   color: white;

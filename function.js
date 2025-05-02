@@ -1,10 +1,10 @@
 class myHeader extends HTMLElement{
-    connectedCallback(){//for home site
+    connectedCallback(){//for home site remove .html when uploading, replace when testing locally
         this.innerHTML = `
         <header>
             <nav class = "header">
                 <ul>
-                    <li><a href="./">Home</a></li>
+                    <li><a href="./index">Home</a></li>
                     <li><a href="./Ideas">Ideas</a></li>
                     <li><a href="./InProgress">In Progress</a></li>
                     <li><a href="./Completed">Completed</a></li>
@@ -15,25 +15,6 @@ class myHeader extends HTMLElement{
     }
 }
 customElements.define('my-header',myHeader);
-/*class myHeader2 extends HTMLElement{//for pages in pages folder
-
-    connectedCallback(){
-        this.innerHTML = `
-        <header>
-            <nav class = "header">
-                <ul>
-                    <li><a href="../Home">Home</a></li>
-                    <li><a href="../Ideas">Ideas</a></li>
-                    <li><a href="../InProgress">In Progress</a></li>
-                    <li><a href="../Completed">Completed</a></li>
-                    <li><a href="../Workspace">Workspace</a></li>
-                </ul>
-            </nav>
-        </header>`;
-    }
-    
-}
-customElements.define('my-header2',myHeader2);*/
 class myFooter extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
@@ -49,3 +30,11 @@ class myFooter extends HTMLElement{
     }
 }
 customElements.define('my-footer',myFooter);
+
+
+
+function sendInfo(){
+    const inner = document.querySelector(".input");
+    const out = document.querySelector(".output");
+    out.innerHTML = inner.value;
+}

@@ -4,11 +4,11 @@ class myHeader extends HTMLElement{
         <header>
             <nav class = "header">
                 <ul>
-                    <li><a href="./index">Home</a></li>
-                    <li><a href="./Ideas">Ideas</a></li>
-                    <li><a href="./InProgress">In Progress</a></li>
-                    <li><a href="./Completed">Completed</a></li>
-                    <li><a href="./Workspace">Workspace</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Ideas.html">Ideas</a></li>
+                    <li><a href="./InProgress.html">In Progress</a></li>
+                    <li><a href="./Completed.html">Completed</a></li>
+                    <li><a href="./Workspace.html">Workspace</a></li>
                 </ul>
             </nav>
         </header>`;
@@ -37,4 +37,15 @@ function sendInfo(){
     const inner = document.querySelector(".input");
     const out = document.querySelector(".output");
     out.innerHTML = inner.value;
+    
+    const data = inner.value;
+    fetch("http://192.168.1.51:3000/input", {
+        method: "POST",
+        headers: {"Content-Type": "application/json",},
+        body: JSON.stringify({message: data}),
+    })
+    .then((res) => res.json())
+    .then((result) => console.log("Server response:", result))
+    .catch((err) => console.error("Error", err));
+    
 }

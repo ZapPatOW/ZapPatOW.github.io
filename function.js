@@ -39,7 +39,7 @@ function sendInfo(){
     out.innerHTML = inner.value;
     
     const data = inner.value;
-    fetch("http://192.168.1.51:3000/input", {
+    fetch("https://192.168.1.51:3000/input", {
         method: "POST",
         headers: {"Content-Type": "application/json",},
         body: JSON.stringify({message: data}),

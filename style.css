@@ -48,6 +48,40 @@ p{
 input{
   margin: 50px;
 }
+
+.projects{
+  
+  flex-direction: row;
+  border: solid white 2px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.ideas{
+  border: solid white 2px;
+  border-radius: 20px;
+  background-color: black;
+  margin: 20px;
+  flex-basis: 30%;
+}
+.inProgress{
+  border: solid white 2px;
+  border-radius: 20px;
+  background-color: black;
+  margin: 20px;
+  flex-basis: 30%;
+}
+
+.completed{
+  border: solid white 2px;
+  border-radius: 20px;
+  background-color: black;
+  margin: 20px;
+  flex-basis: 30%;
+}
+
+
 /*footer*/
 .footer{
   color: white;
@@ -55,10 +89,6 @@ input{
   font-family: Consolas, 'Courier New', monospace;
   text-align: center;
   background-color: black;
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin: 0;
-  padding: 0;
 }
 
 .footer p{
@@ -67,8 +97,6 @@ input{
 
 /*navbar*/
 .header{
-  flex-grow: 0px;
-  flex-shrink: 0px;
   padding-bottom: 20px;
 }
 .header ul{
@@ -83,7 +111,7 @@ input{
   color: white;
   text-decoration: none;
   padding: 25px;
-  display: block;  
+  display: flex;  
   text-align: center;
   font-size: 25px;
   border-right: 2px solid black;

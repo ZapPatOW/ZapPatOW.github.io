@@ -45,7 +45,7 @@ function sendInfo(){
     
     
     const data = inner.value;
-    fetch("http://api.eloguardians.xyz/input", {
+    fetch("https://api.eloguardians.xyz/input", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"

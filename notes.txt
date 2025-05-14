@@ -1,7 +1,0 @@
-Utilize VSCode built in repository. Need to make a refresher on how to get it to function again.
-
-Stage all changes -> commit changes -> Sync Changes
-
-Learn more about the other git options to be more efficient
-
-python3 -m http.server 8000 //load server on localhost so api can be tested properly

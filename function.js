@@ -34,16 +34,35 @@ customElements.define('my-footer',myFooter);
 function sendInfo(){
     const inner = document.querySelector(".input");
     const out = document.querySelector(".output");
-    out.innerHTML = inner.value;
+
+    if(inner && out){ //check for valid input and output
+        out.innerHTML = inner.value;
+    }
+    else{
+        console.error("Input or Output element not found");
+        return;
+    }
+    
     
     const data = inner.value;
-    fetch("https://192.168.1.51:3000/input", {
+    fetch("http://api.eloguardians.xyz/input", {
         method: "POST",
-        headers: {"Content-Type": "application/json",},
-        body: JSON.stringify({message: data}),
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({message: data})
     })
-    .then((res) => res.json())
-    .then((result) => console.log("Server response:", result))
-    .catch((err) => console.error("Error", err));
+    .then((res) => {
+        if(!res.ok){
+            throw new Error(`HTTP Error! Status: ${res.status}`);
+        }
+        return res.json();
+    })
+    .then((result) => {
+        console.log("Server response:", result)
+    })
+    .catch((err) => {
+        console.error("Error", err)
+    })
     
 }

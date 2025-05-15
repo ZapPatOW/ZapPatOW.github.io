@@ -45,12 +45,16 @@ function sendInfo(){
     
     
     const data = inner.value;
+    const timestamp = new Date().toISOString();
     fetch("https://api.eloguardians.xyz/input", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify({message: data})
+        body: JSON.stringify({
+            message: data,
+            time: timestamp
+        })
     })
     .then((res) => {
         if(!res.ok){

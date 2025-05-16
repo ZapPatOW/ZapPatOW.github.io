@@ -6,7 +6,7 @@ class myHeader extends HTMLElement{
                 <ul>
                     <li><a href="./index.html">Home</a></li>
                     <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./workspace.html">Workspace</a></li>
+                    <li><a href="./gamespace.html">Gamespace</a></li>
                 </ul>
             </nav>
         </header>`;
@@ -36,7 +36,7 @@ function sendInfo(){
     const out = document.querySelector(".output");
 
     if(inner && out){ //check for valid input and output
-        out.innerHTML = inner.value;
+        
     }
     else{
         console.error("Input or Output element not found");
@@ -63,6 +63,13 @@ function sendInfo(){
         return res.json();
     })
     .then((result) => {
+        if(result.isUnique){
+            out.innerHTML = `<p>Congrats!!!! that was unique message #${result.count}</p>`;
+        }
+        else{
+            out.innerHTML = `<p>you should be disappointed that you are not unique</p>`;
+        }
+        
         console.log("Server response:", result)
     })
     .catch((err) => {

@@ -67,7 +67,7 @@ function sendInfo(){
             out.innerHTML = `<p>Congrats!!!! that was unique message #${result.count}</p>`;
         }
         else{
-            out.innerHTML = `<p>you should be disappointed that you are not unique</p>`;
+            out.innerHTML = `<p>You should be disappointed that you are not unique 😡</p>`;
         }
         
         console.log("Server response:", result)

@@ -42,12 +42,13 @@ ul{
 }
 
 /* workspace*/
-input{
-  margin: 50px;
-}
 .workspace{
   margin:0;
 }
+input[type=test]{
+  margin: 50px;
+}
+
 
 /*projects page*/
 .projects{

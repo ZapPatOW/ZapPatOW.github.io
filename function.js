@@ -1,5 +1,5 @@
 class myHeader extends HTMLElement{
-    connectedCallback(){//for home site remove .html when uploading, replace when testing locally
+    connectedCallback(){//for home site remove .html when uploading, replace when testing locally (find a way to automate)
         this.innerHTML = `
         <header>
             <nav class = "header">
@@ -36,13 +36,11 @@ function sendInfo(){
     const out = document.querySelector(".output");
 
     if(inner && out){ //check for valid input and output
-        
     }
     else{
         console.error("Input or Output element not found");
         return;
     }
-    
     
     const data = inner.value;
     const timestamp = new Date().toISOString();
@@ -67,7 +65,7 @@ function sendInfo(){
             out.innerHTML = `<p>Congrats!!!! that was unique message #${result.count}</p>`;
         }
         else{
-            out.innerHTML = `<p>You should be disappointed that you are not unique 😡</p>`;
+            out.innerHTML = `<p>You should be disappointed that you are not unique</p>`;
         }
         
         console.log("Server response:", result)

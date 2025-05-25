@@ -7,26 +7,24 @@
         <meta property="og:url" content="https://eloguardians.xyz/gamespace"/>
         <meta property="og:type" content="website"/>
         <link rel="stylesheet" href="./style.css"/>
-        <link rel="icon" href = "./favicon.ico"/>
-        <title>
-            ZapPat's Gamespace
-        </title>
+        <link rel="icon" href="./favicon.ico"/>
+        <title>ZapPat's Gamespace</title>
     </head>
-    <div class = "wrapper">
-        <my-header></my-header>
-        <body>
+    <body>
+        <div class="wrapper">
+            <my-header></my-header>        
             <main>
-                <div class = workspace>
+                <div class="workspace">
                     <h1>Uniqueness game:</h1><br>
                     <p>Check to see if you have a unique message to leave:</p>
-                    <input type = "text" placeholder="Say something unique" class = "input">
-                    <button class = "connect" onclick="new sendInfo()">Check Uniqueness</button>
-                    <h3 class = "output"></h3>
+                    <input type="text" placeholder="Say something unique" class = "input">
+                    <button class="connect" onclick="sendInfo()">Check Uniqueness</button>
+                    <h3 class="output"></h3>
                 </div>
-                <iframe src="https://www.youtube.com/watch?v=O58bCGp7tuM&t=2050s" alt="sick vod"></iframe>
+                <iframe src="https://www.youtube.com/embed/O58bCGp7tuM" alt="sick vod"></iframe>
             </main>
-            <script src="./function.js"></script>
-        </body>
-        <my-footer></my-footer> 
-    </div>
+            <script src="./function.js"></script>            
+            <my-footer></my-footer> 
+        </div>
+    </body>
 </html>

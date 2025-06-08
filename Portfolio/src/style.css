@@ -128,6 +128,10 @@ input[type=test]{
   margin: 0px;
 }
 
+.footer h1{
+  margin: 0px;
+}
+
 /*navbar*/
 .header{
   padding-bottom: 20px;

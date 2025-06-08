@@ -2,3 +2,41 @@ Create a Certifications Page - Eventually use the free trial to get pictures of 
 More style website still looks 1990 coded
 Condense the code/make it more readable
 add screenshots/powerpoint for the completed items
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta property="og:title" content="Eloguardians" />
+    <meta property="og:description" content="See if you are unique!" />
+    <meta property="og:image" content="https://eloguardians.xyz/Chows2.png" />
+    <meta property="og:url" content="https://eloguardians.xyz/" />
+    <meta property="og:type" content="website" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" />
+    <title>
+        ZapPat's Website
+    </title>
+</head>
+
+
+
+<body>
+    <my-header></my-header>
+    <div class="wrapper">
+        <main>
+            <h1>Welcome to my website!</h1>
+            <p>
+                This is a WIP where I will be documenting my programming knowledge and projects.<br>
+                I practiced and learned Python, Java, and C during my time at GMU. My experience with HTML, JavaScript,
+                and CSS has come with the building of this website.<br>
+            </p>
+        </main>
+        <script src="./function.js"></script>
+
+        <my-footer></my-footer>
+    </div>
+</body>
+
+
+</html>

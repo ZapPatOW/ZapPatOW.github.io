@@ -1,18 +1,20 @@
-class myHeader extends HTMLElement{
+/*class myHeader extends HTMLElement{
     connectedCallback(){//for home site remove .html when uploading, replace when testing locally (find a way to automate)
         this.innerHTML = `
         <header>
             <nav class = "header">
                 <ul>
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./projects.html">Projects</a></li>
-                    <li><a href="./gamespace.html">Gamespace</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/Projects">Projects</Link></li>
+                    <li><a href="./games.html">Games</a></li>
+                    <li><a href="./survey.html">Survey</a></li>
+                    <li><a href="./workspace.html">Workspace</a></li>
                 </ul>
             </nav>
         </header>`;
     }
 }
-customElements.define('my-header',myHeader);
+customElements.define('my-header',myHeader);*/
 class myFooter extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `

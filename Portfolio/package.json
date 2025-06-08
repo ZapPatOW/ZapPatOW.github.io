@@ -9,6 +9,7 @@
     "deploy": "gh-pages -d dist -f",
     "postdeploy": "echo Deploy finished",
     "build": "vite build",
+    "postbuild": "node copyIndexTo404.js",
     "dev": "vite",
     "lint": "eslint .",
     "preview": "vite preview"

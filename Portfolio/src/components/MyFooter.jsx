@@ -9,7 +9,7 @@ const MyFooter = () => {
                 Name: Patrick Meinen<br />
                 Email: patricklmeinen@gmail.com<br />
                 Programming languages: Python, Java, C, HTML, JavaScript, CSS, SQLite<br />
-                Certifications: Back-End Developer - Mimo.org
+                Certifications: Back-End Developer, CSS, SQL, JavaScript - Mimo.org
             </p>
         </div>
     )

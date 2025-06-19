@@ -6,6 +6,7 @@ import Projects from "./pages/Projects";
 import Games from "./pages/Games";
 import Survey from "./pages/Survey";
 import Workspace from "./pages/Workspace";
+import MyFooter from "./components/MyFooter";
 
 const App =() =>{
     return(
@@ -18,6 +19,7 @@ const App =() =>{
                 <Route path="/survey" element={<Survey />}/>
                 <Route path="/workspace" element={<Workspace />}/>
             </Routes>
+            <MyFooter />
         </Router>
     );
 };
